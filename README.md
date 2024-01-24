@@ -10,9 +10,9 @@
 - $ rails generate rspec:install
 
 ## Generate Model
-- $ rails g model PokemonParty name:string costume:string contribution:string
+- $ rails g model PokemonParty name:string costume:string contribution:string  
 ***NOTE: Because rspec has been installed, rails will generate not only a model and migration file but also a testing file for the model.***
-- $ rails db:migrate
+- $ rails db:migrate  
 ***NOTE: This command saves the current status of the database in a schema file.***
 
 ## To view the application in the browser
@@ -59,10 +59,11 @@ end
 ```
 - To execute the spec test: $ rspec spec/models/pokemon_party_spec.rb
 
-- Verify that it is good failure
-`expected `[].empty?` to be falsey, got true` means that the error logs is empty.
+- Verify that it is good failure  
+`expected `[].empty?` to be falsey, got true` means that the error logs is empty.  
+```bash
 1 example, 1 failure
-
+```
 - Make the spec pass
 - Place the validation on the applicable model (app/models/pokemon_party.rb)
 ```rb
@@ -83,11 +84,11 @@ Finished in 0.02227 seconds (files took 0.73976 seconds to load)
 1 example, 0 failures
 ```
 
-- Refactor the specs. Because name and costume are using the same validation helper, we will place the spec on one line
+- Refactor the specifications. Because name and costume are using the same validation helper, we will place the specifications on one line.
 
-## Redundant code
-validates :name, presence: true
+### Redundant code
+validates :name, presence: true  
 validates :costume, presence: true
 
-## Refactor
+### Refactor
 validates :name, :costume, presence: true
