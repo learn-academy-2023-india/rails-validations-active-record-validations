@@ -1,5 +1,10 @@
 ## Active Record Validations and Specs 1/24/24 India
 
+## Create empty github repo
+- Click the github classroom link
+- One team member sets up the team name on github classroom and accepts the github classroom assignment  
+- One team member creates a rails app and follow the instructions in the syllabus to link the github and local repo and make initial commit
+  
 ## Create Rails app on Desktop
 - $ cd Desktop
 - $ rails new rails-validations -d postgresql -T
@@ -8,6 +13,17 @@
 - $ code .
 - $ bundle add rspec-rails
 - $ rails generate rspec:install
+
+## Initial commit
+- copy and paste the `git remote add` terminal command from the empty github repo
+- create a main branch:  $ git checkout -b main
+- Initial commit message: "initial commit"
+- Push changes to the main branch
+- All team members will clone the github repo
+
+## Switching drivers
+- Ensure the github repo is cloned
+- Run bundle to get all required dependency: $ bundle
 
 ## Generate Model
 - $ rails g model PokemonParty name:string costume:string contribution:string  
